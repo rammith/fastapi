@@ -1,7 +1,6 @@
 services:
-
   api:
-    image: api-practice:latest
+    image: ghcr.io/rammith/fastapi:latest
     container_name: api-practice
     ports:
       - "8000:8000"
@@ -19,6 +18,5 @@ services:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql
-
 volumes:
   postgres_data:
