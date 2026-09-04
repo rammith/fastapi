@@ -1,6 +1,7 @@
 services:
   api:
-    image: ghcr.io/rammith/fastapi:latest
+    # image: ghcr.io/rammith/fastapi:latest
+    build: .
     container_name: api-practice
     ports:
       - "8000:8000"
